@@ -1,0 +1,31 @@
+*{box-sizing:border-box}
+html,body{height:100%;margin:0;padding:0;font-family:Inter,system-ui,Segoe UI,Arial,sans-serif;background:#0b1020;color:#eef1ff}
+#app{max-width:980px;margin:0 auto;padding:16px}
+.topbar{display:flex;align-items:center;justify-content:space-between;padding:10px 14px;border-radius:16px;background:linear-gradient(135deg,#1a2240,#10162b);box-shadow:0 10px 30px rgba(0,0,0,.35);position:sticky;top:10px;z-index:10}
+.brand{font-weight:800;letter-spacing:.3px}
+.user{opacity:.9}
+.hero{margin:18px 0;display:grid;gap:16px;grid-template-columns:1fr}
+.timer{padding:16px;border-radius:16px;background:rgba(255,255,255,.04);backdrop-filter:blur(6px);box-shadow:0 6px 20px rgba(0,0,0,.25)}
+.bar{height:10px;background:rgba(255,255,255,.08);border-radius:99px;margin-top:8px;overflow:hidden}
+.progress{height:100%;width:100%;background:linear-gradient(90deg,#62f,#9cf);transition:width .3s ease}
+.money{display:flex;gap:16px;flex-wrap:wrap}
+.money b{font-size:1.1rem}
+.grid{display:grid;grid-template-columns:repeat(2,1fr);gap:12px}
+.card{background:linear-gradient(180deg,rgba(255,255,255,.06),rgba(255,255,255,.03));border:1px solid rgba(255,255,255,.08);border-radius:16px;padding:12px;box-shadow:0 4px 16px rgba(0,0,0,.2);display:flex;flex-direction:column;gap:10px}
+.card h4{margin:0;font-size:1rem}
+.row{display:flex;gap:8px;align-items:center;justify-content:space-between}
+.qty{display:flex;gap:6px}
+.qty input{width:70px;padding:6px 8px;border-radius:10px;border:1px solid rgba(255,255,255,.15);background:rgba(255,255,255,.06);color:#fff}
+.btn{padding:8px 10px;border-radius:12px;border:1px solid rgba(255,255,255,.18);background:rgba(255,255,255,.08);color:#fff;cursor:pointer}
+.btn:hover{filter:brightness(1.1)}
+.primary{background:linear-gradient(135deg,#6e89ff,#9bb7ff);color:#10162b;border:none;font-weight:700}
+.panel{margin-top:18px;padding:16px;border-radius:16px;background:rgba(255,255,255,.04);box-shadow:0 6px 16px rgba(0,0,0,.2)}
+.panel h3,.board h3{margin-top:0}
+#log{list-style:none;padding:0;margin:0;max-height:180px;overflow:auto}
+#log li{padding:6px 0;border-bottom:1px dashed rgba(255,255,255,.1)}
+.board{margin-top:18px;padding:16px;border-radius:16px;background:rgba(255,255,255,.02);box-shadow:0 6px 16px rgba(0,0,0,.2)}
+.foot{opacity:.7;text-align:center;margin:18px 0}
+@media(min-width:760px){
+  .hero{grid-template-columns:1.2fr .8fr}
+  .grid{grid-template-columns:repeat(3,1fr)}
+}
