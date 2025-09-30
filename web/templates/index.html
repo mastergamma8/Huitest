@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Потрать $1,000,000 за 5 минут</title>
+  <script src="https://telegram.org/js/telegram-web-app.js"></script>
+  <link rel="stylesheet" href="/static/style.css" />
+</head>
+<body>
+  <div id="app">
+    <header class="topbar">
+      <div class="brand">💸 Spend Million</div>
+      <div class="user" id="userBox">Гость</div>
+    </header>
+
+    <section class="hero">
+      <div class="timer">
+        <div>Осталось: <span id="timeLeft">05:00</span></div>
+        <div class="bar"><div id="progress" class="progress"></div></div>
+      </div>
+      <div class="money">
+        <div>Потрачено: <b id="spent">$0</b></div>
+        <div>Остаток: <b id="remaining">$1,000,000</b></div>
+      </div>
+    </section>
+
+    <section class="grid" id="itemsGrid">
+      <!-- Items injected by JS -->
+    </section>
+
+    <section class="panel">
+      <h3>Чек</h3>
+      <ul id="log"></ul>
+      <button id="finishBtn" class="primary">Завершить досрочно</button>
+    </section>
+
+    <section class="board">
+      <h3>🏆 Топ игроков</h3>
+      <ol id="leader"></ol>
+    </section>
+
+    <footer class="foot">
+      <small>Made with ❤️ — aiogram + FastAPI</small>
+    </footer>
+  </div>
+
+  <script src="/static/app.js"></script>
+</body>
+</html>
